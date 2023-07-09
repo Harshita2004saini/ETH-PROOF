@@ -1,16 +1,16 @@
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.18;
-
-/*
-       REQUIREMENTS
-    1. Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply)
-    2. Your contract will have a mapping of addresses to balances (address => uint)
-    3. You will have a mint function that takes two parameters: an address and a value. 
-       The function then increases the total supply by that number and increases the balance 
-       of the “sender” address by that amount
-    4. Your contract will have a burn function, which works the opposite of the mint function, as it will destroy tokens. 
-       It will take an address and value just like the mint functions. It will then deduct the value from the total supply 
-       and from the balance of the “sender”.
-    5. Lastly, your burn function should have conditionals to make sure the balance of "sender" is greater than or equal 
-       to the amount that is supposed to be burned.
-*/
+# Create-a-Token
+This is a robustness program  intended to serve as the base implementation of token contracts on the Ethereum blockchain. Its purpose is to provide a foundation for creating and managing tokens within a decentralized application (DApp) or smart contract ecosystem. 
+A straightforward token contract implementation on the Ethereum blockchain. For creating, minting, and burning tokens, it offers the bare minimum of functionality. Developers looking to build their own token system for a decentralized application (DApp) or smart contract project can use this contract as a jumping-off point. 
+# Features of this
+Information about the token, including its name, acronym, and total supply, is kept in the contract.
+Token Balances: To enable users to view their token holdings, the contract maintains a mapping of addresses to token balances.
+Token Minting: The contract has a feature that allows for the addition of new tokens to the supply. It is possible to assign tokens to a particular address.
+Burning Tokens: The contract includes a feature that allows you to burn tokens to lower the total supply and take the value of those tokens out of a specific address.
+Validation: To make sure that the address has a sufficient token balance before burning, the burn function has conditionals.
+# Executing program
+Utilizing a Solidity compiler of your choice, compile the contract.
+Utilize a development tool like Remix, Truffle, or Hardhat to deploy the contract to an Ethereum network.
+Call the functions of the contract to interact with it. Token balances can be retrieved, burned, and new tokens can be minted.
+# Authors
+Harshita Saini
+21BCS5576@cuchd.in
